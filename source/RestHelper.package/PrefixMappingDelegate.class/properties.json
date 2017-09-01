@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RestHelper",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"prefixDictionary"
+	],
+	"name" : "PrefixMappingDelegate",
+	"type" : "normal"
+}
