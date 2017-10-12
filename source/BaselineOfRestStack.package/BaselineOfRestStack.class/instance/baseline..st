@@ -9,8 +9,15 @@ baseline: spec
 					className: #ConfigurationOfZincHTTPComponents;
 					versionString: '2.8.3';
 					loads: #('REST' );
-					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ].
+					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
+			baseline: 'ExceptionReport' with: [ 
+				 spec 
+					repository: 'github://noha/pharo-toolbox/source'].
 
-		spec package: #'RestHelper'.
+		spec package: #'RestStack-Zinc' with: [
+			spec requires: #( 'Zinc' ) ].
+		spec package: #'RestStack-Exception' with: [
+			spec requires: #( 'RestStack-Zinc' 'ExceptionReporter' ) ].
 		spec 
-			group: 'helper' with: #(#'RestHelper' ) ].
+			group: 'default' with: #(#'RestStack-Zinc' );
+			group: 'exception' with: #(#'RestStack-Zinc' #'RestStack-Exception' ) ].
