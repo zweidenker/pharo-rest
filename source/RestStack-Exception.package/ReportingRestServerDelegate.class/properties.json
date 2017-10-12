@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ZnJSONRestServerDelegate",
+	"category" : "RestStack-Exception",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"delegate",
+		"path",
+		"staticDelegate"
+	],
+	"name" : "ReportingRestServerDelegate",
+	"type" : "normal"
+}

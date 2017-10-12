@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RestStack-Zinc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"delegate",
+		"path",
+		"staticDelegate"
+	],
+	"name" : "StaticFileDecoratorDelegate",
+	"type" : "normal"
+}
