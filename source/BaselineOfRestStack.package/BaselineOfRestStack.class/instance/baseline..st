@@ -7,7 +7,7 @@ baseline: spec
 			project: 'Zinc' with: [
 				spec
 					className: #ConfigurationOfZincHTTPComponents;
-					versionString: '2.9.4';
+					versionString: #'bleedingEdge';
 					loads: #('REST' );
 					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
 			baseline: 'ExceptionReport' with: [ 
