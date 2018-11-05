@@ -8,7 +8,7 @@ baseline: spec
 				spec
 					className: #ConfigurationOfZincHTTPComponents;
 					versionString: #'bleedingEdge';
-					loads: #('REST' );
+					loads: #('REST' 'Zinc-HTTP-Examples');
 					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
 			baseline: 'ExceptionReport' with: [ 
 				 spec 
@@ -18,8 +18,7 @@ baseline: spec
 			spec requires: #( 'Zinc' ) ].
 		spec package: #'RestStack-Exception' with: [
 			spec requires: #( 'RestStack-Zinc' 'ExceptionReport' ) ].
-		spec package: #'Zinc-HTTP-Examples' with: [
-			spec requires: #( 'Zinc' ) ].
+
 		spec 
-			group: 'default' with: #(#'RestStack-Zinc' #'Zinc-HTTP-Examples');
+			group: 'default' with: #(#'RestStack-Zinc');
 			group: 'exception' with: #(#'default' #'RestStack-Exception' ) ].
