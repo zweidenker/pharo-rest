@@ -22,4 +22,4 @@ baseline: spec
 			spec requires: #( 'Zinc' ) ].
 		spec 
 			group: 'default' with: #(#'RestStack-Zinc' #'Zinc-HTTP-Examples');
-			group: 'exception' with: #(#'RestStack-Zinc' #'RestStack-Exception' ) ].
+			group: 'exception' with: #(#'default' #'RestStack-Exception' ) ].
