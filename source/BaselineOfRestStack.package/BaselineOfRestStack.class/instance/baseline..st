@@ -18,6 +18,8 @@ baseline: spec
 			spec requires: #( 'Zinc' ) ].
 		spec package: #'RestStack-Exception' with: [
 			spec requires: #( 'RestStack-Zinc' 'ExceptionReport' ) ].
+		spec package: #'Zinc-HTTP-Examples' with: [
+			spec requires: #( 'Zinc' ) ].
 		spec 
-			group: 'default' with: #(#'RestStack-Zinc' );
+			group: 'default' with: #(#'RestStack-Zinc' #'Zinc-HTTP-Examples');
 			group: 'exception' with: #(#'RestStack-Zinc' #'RestStack-Exception' ) ].
