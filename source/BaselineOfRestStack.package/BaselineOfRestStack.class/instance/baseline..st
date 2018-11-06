@@ -3,15 +3,13 @@ baseline: spec
 	<baseline>
 
 	spec for: #'common' do: [
-		spec	
-			project: 'Zinc' with: [
-				spec
-					className: #ConfigurationOfZincHTTPComponents;
-					versionString: #'bleedingEdge';
+		spec 
+			baseline: 'ZincHTTPComponents' with: [ 
+				spec 
 					loads: #('REST' 'Zinc-HTTP-Examples');
-					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
+					repository: 'github://zweidenker/zinc/repository'];
 			baseline: 'ExceptionReport' with: [ 
-				 spec 
+				spec 
 					repository: 'github://noha/pharo-toolbox/source'].
 
 		spec package: #'RestStack-Zinc' with: [
