@@ -13,7 +13,7 @@ baseline: spec
 					repository: 'github://noha/pharo-toolbox/source'].
 
 		spec package: #'RestStack-Zinc' with: [
-			spec requires: #( 'Zinc' ) ].
+			spec requires: #( 'ZincHTTPComponents' ) ].
 		spec package: #'RestStack-Exception' with: [
 			spec requires: #( 'RestStack-Zinc' 'ExceptionReport' ) ].
 
