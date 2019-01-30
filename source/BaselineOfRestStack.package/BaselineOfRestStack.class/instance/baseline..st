@@ -2,20 +2,15 @@ baselines
 baseline: spec
 	<baseline>
 
+	self zinc: spec.
 	spec for: #'common' do: [
 		spec	
-			project: 'Zinc' with: [
-				spec
-					className: #ConfigurationOfZincHTTPComponents;
-					versionString: '2.8.9';
-					loads: #('REST' );
-					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
 			baseline: 'ExceptionReport' with: [ 
 				 spec 
 					repository: 'github://noha/pharo-toolbox/source'].
 
 		spec package: #'RestStack-Zinc' with: [
-			spec requires: #( 'Zinc' ) ].
+			spec requires: #( 'ZincHTTPComponents' ) ].
 		spec package: #'RestStack-Exception' with: [
 			spec requires: #( 'RestStack-Zinc' 'ExceptionReport' ) ].
 		spec 
