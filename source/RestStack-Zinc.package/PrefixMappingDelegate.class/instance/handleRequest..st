@@ -1,11 +1,12 @@
 public
 handleRequest: request
-	| handler |
+	| handler relativeRequest |
 	handler := self prefixDictionary 
 		at: request uri firstPathSegment 
 		ifAbsent: [ ^ ZnResponse notFound: request uri ].	
-	request uri removeFirstPathSegment.
+	relativeRequest := request copy.
+	relativeRequest uri removeFirstPathSegment.
 	^ handler isBlock 
-		ifTrue: [ handler value: request ]
-		ifFalse: [ handler handleRequest: request ].
+		ifTrue: [ handler value: relativeRequest ]
+		ifFalse: [ handler handleRequest: relativeRequest ].
 
