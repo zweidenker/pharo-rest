@@ -5,4 +5,4 @@ zinc: spec
 		baseline: 'ZincHTTPComponents' with: [ 
 			spec 
 				loads: #('REST' 'Zinc-HTTP-Examples');
-				repository: 'github://svenvc/zinc:v3.0.1/repository']
+				repository: 'github://svenvc/zinc/repository']
